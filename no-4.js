@@ -1,5 +1,5 @@
 function seleksiNilai(nilaiAwal, nilaiAKhir, dataArray) {
-  const result = [];
+  let result = [];
 
   // buat pengkondisian nilai akhir harus lebih besar dari nilai awal
   // dan jumlah angka dalam data array harus lebih dari 5
@@ -13,7 +13,8 @@ function seleksiNilai(nilaiAwal, nilaiAKhir, dataArray) {
     for (let i = 0; i < dataArray.length; i++) {
       const number = dataArray[i];
       if (number > nilaiAwal && number < nilaiAKhir) {
-        result.push(number);
+        result = [...result, dataArray[i]];
+        // result.push(number); // harusnya menggunakan spread operator
       }
     }
 

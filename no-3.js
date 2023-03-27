@@ -17,7 +17,7 @@ const names = [
   "Penelope",
 ];
 
-function searchName(include, limit, callback) {
+function searchName(include, limit, cb) {
   const result = [];
 
   // buat perulangan
@@ -30,11 +30,11 @@ function searchName(include, limit, callback) {
       result.push(name);
     }
   }
-  // buat function callback untuk memanggil result dan membatasinya menggunakan slice
-  callback(result.slice(0, limit));
+  // untuk memanggil result dan membatasinya menggunakan slice()
+  cb(result.slice(0, limit));
 }
 
-// menampilkan result dengan menggunakan function callback
+// buat function callback untuk menampilkan result
 function callback(result) {
   console.log(result);
 }

@@ -1,14 +1,8 @@
 // slice()
-// metode mengembalikan salinan dari sebagian array ke objek array baru yang dipilih dari awal hingga akhir(akhir tidak termasuk)
+// metode mengembalikan salinan dari sebagian array ke array baru yang dipilih dari awal hingga akhir(akhir tidak termasuk)
 // awal dan akhir mewakili indeks item dari array tersebut
 const fruits = ["orange", "apple", "peach", "starfruit"];
 console.log(fruits.slice(1, 3));
-
-// map()
-// metode membuat array baru yang diisi dengan hasil pemanggilan fungsi yang disediakan pada setiap elemen dalam array panggilan
-const array = [1, 2, 3, 4, 5];
-const map = array.map((x) => x * 5);
-console.log(map);
 
 // toLowerCase()
 // metode mengembalikan nilai string yang dikonversi ke huruf kecil
@@ -22,7 +16,7 @@ console.log(name.toUpperCase());
 // split()
 // metode mengambil pola dan membagi string ke dalam substring yang diurutkan dengan mencari polanya,
 // menempatkannya ke dalam array dan mengembalikan array
-console.log(name.split(" "));
+console.log(name.split(""));
 
 // trim()
 // metode menghapus spasi dari kedua ujung kiri dan kanan string dan mengembalikan string baru, tanpa memodifikasi string asli
@@ -52,3 +46,9 @@ console.log(sorted);
 // metode membuat dan mengembalikan string baru dengan menggabungkan semua elemen dalam array,
 // dipisahkan dengan koma atau string pemisah
 console.log(fruits.join());
+
+// map()
+// metode membuat array baru yang diisi dengan hasil pemanggilan fungsi yang disediakan pada setiap elemen dalam array panggilan
+// const array = [1, 2, 3, 4, 5];
+// const map = array.map((x) => x * 5);
+// console.log(map);
